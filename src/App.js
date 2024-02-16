@@ -36,7 +36,7 @@ function App() {
 				<img
 					style={{ width: "100%", height: "700px" }}
 					src={frontdesk}
-					alt="logo"
+					alt="frontdesk"
 				></img>
 				<div
 					style={{
@@ -99,10 +99,12 @@ function App() {
 			</div>
 			<div
 				style={{
+					backgroundColor: "rgb(249,248,217)",
 					display: "grid",
 					fontSize: "22px",
 					alignItems: "center",
-					margin: "20px 50px",
+					margin: "10px 10px",
+					padding: "30px",
 					gridTemplateColumns: "1fr 1fr 1fr 1fr",
 					gridTemplateRows: "auto",
 					gridTemplateAreas:
@@ -113,6 +115,7 @@ function App() {
 					style={{
 						fontSize: "30px",
 						gridArea: "title",
+						marginBottom: "25px",
 					}}
 				>
 					Get In Touch!
@@ -120,7 +123,6 @@ function App() {
 				<div style={{ gridArea: "address" }}>
 					<h4>Ad​d​ress & Parking Deatils</h4>
 					<p>Capelli Curl® by My Capelli Salon</p>
-
 					<h4>79 Mamaroneck Ave., White Plains, NY 10601.</h4>
 					<p>
 						Two municipal parking lots available close to the salon. 20 Mitchell
@@ -135,7 +137,10 @@ function App() {
 					<p>Email</p>
 					<h5>capellicurl@mycapellisalon.com</h5>
 					<p>
-						To book online, <a>Click Here: Book Now!!</a>
+						To book online,{" "}
+						<a href="https://www.vagaro.com/mycapellisaloninc/services/">
+							Click Here: Book Now!!
+						</a>
 					</p>
 				</div>
 				<div style={{ gridArea: "hours" }}>
@@ -161,11 +166,20 @@ function App() {
 					}}
 				>
 					<h4>Social</h4>
-					<img src={pinterest}></img>
-					<img src={facebook}></img>
-					<img src={instagram}></img>
-					<img src={linkedin}></img>
-					<img src={twitter}></img>
+					<div
+						style={{
+							display: "flex",
+							flexDirection: "column",
+							alignItems: "center",
+							gap: "20px",
+						}}
+					>
+						<img src={pinterest} alt="pinterest icon"></img>
+						<img src={facebook} alt="facebook icon"></img>
+						<img src={instagram} alt="instagram icon"></img>
+						<img src={linkedin} alt="linkedin icon"></img>
+						<img src={twitter} alt="twitter icon"></img>
+					</div>
 				</div>
 			</div>
 		</div>
