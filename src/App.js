@@ -103,6 +103,7 @@ function App() {
 					display: "grid",
 					fontSize: "22px",
 					alignItems: "center",
+
 					margin: "10px 10px",
 					padding: "30px",
 					gridTemplateColumns: "1fr 1fr 1fr 1fr",
@@ -123,7 +124,11 @@ function App() {
 				<div style={{ gridArea: "address" }}>
 					<h4>Ad​d​ress & Parking Deatils</h4>
 					<p>Capelli Curl® by My Capelli Salon</p>
-					<h4>79 Mamaroneck Ave., White Plains, NY 10601.</h4>
+					<h4>
+						<a href="https://www.google.com/maps/place/79+Mamaroneck+Ave,+White+Plains,+NY+10601/@41.0304615,-73.7680001,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29430b4cd3573:0xb2677b5733add367!8m2!3d41.0304575!4d-73.7654252!16s%2Fg%2F11bw4lwz4m?entry=ttu">
+							79 Mamaroneck Ave., White Plains, NY 10601
+						</a>
+					</h4>
 					<p>
 						Two municipal parking lots available close to the salon. 20 Mitchell
 						Pl, and 125 Court St. next to Inca & Guacho Restuarant (on the
@@ -137,28 +142,42 @@ function App() {
 					<p>Email</p>
 					<h5>capellicurl@mycapellisalon.com</h5>
 					<p>
-						To book online,{" "}
+						To book online,
 						<a href="https://www.vagaro.com/mycapellisaloninc/services/">
 							Click Here: Book Now!!
 						</a>
 					</p>
 				</div>
-				<div style={{ gridArea: "hours" }}>
+				<div
+					style={{
+						gridArea: "hours",
+						display: "flex",
+						flexDirection: "column",
+						margin: "10px 10px",
+						textWrap: "nowrap",
+					}}
+				>
 					<h5>Hours</h5>
-					<p>Tuesday</p>
-					<h5>9:30am - 5:45pm</h5>
-					<p>Wednesday</p>
-					<h5>9:30 am - 5:45 pm</h5>
-					<p>Thursday</p>
-					<h5>10:30 am - 7:00 pm</h5>
-					<p>Friday</p>
-					<h5>9:30 am - 5:45 pm</h5>
-					<p>Saturday</p>
-					<h5>9:30 am - 5:45 pm</h5>
-					<p>Sunday</p>
-					<h5>Closed</h5>
-					<p>Monday</p>
-					<h5>Closed</h5>
+					<div style={{ display: "flex", gap: "10px" }}>
+						<div>
+							<p>Tuesday</p>
+							<h5>9:30am - 5:45pm</h5>
+							<p>Wednesday</p>
+							<h5>9:30am - 5:45pm</h5>
+						</div>
+						<div>
+							<p>Thursday</p>
+							<h5>10:30am - 7:00pm</h5>
+							<p>Friday</p>
+							<h5>9:30am - 5:45pm</h5>
+						</div>
+						<div>
+							<p>Saturday</p>
+							<h5>9:30am - 5:45pm</h5>
+							<p>Sun-Mon</p>
+							<h5>Closed</h5>
+						</div>
+					</div>
 				</div>
 				<div
 					style={{
@@ -169,7 +188,6 @@ function App() {
 					<div
 						style={{
 							display: "flex",
-							flexDirection: "column",
 							alignItems: "center",
 							gap: "20px",
 						}}
