@@ -1,5 +1,5 @@
 import "./App.css";
-
+import Footer from "./components/footer";
 import Main from "./components/Main";
 import Nav from "./components/nav";
 import Gallery from "./components/gallery";
@@ -20,6 +20,7 @@ function App() {
 				<Route path="/" Component={Main}></Route>
 				<Route path="/gallery" Component={Gallery} />
 			</Routes>
+			<Footer />
 		</>
 	);
 }
