@@ -1,15 +1,32 @@
 import "./App.css";
-import Nav from "./components/nav";
-import frontdesk from "./frontdesk.webp";
-import pinterest from "./pinterest_icon.png";
-import instagram from "./instagram_icon.png";
-import linkedin from "./linkedin_icon.png";
-import facebook from "./facebook_icon.png";
-import twitter from "./twitter_icon.png";
+import Nav from "./components/Nav";
+import Main from "./components/Main";
+import { Link, Route, Routes } from "react-router-dom";
+
+// import frontdesk from "./frontdesk.webp";
+// import pinterest from "./pinterest_icon.png";
+// import instagram from "./instagram_icon.png";
+// import linkedin from "./linkedin_icon.png";
+// import facebook from "./facebook_icon.png";
+// import twitter from "./twitter_icon.png";
 
 function App() {
 	return (
-		<div className="App" style={{ backgroundColor: "#453823" }}>
+		<>
+			<Link to="/profiles" style={{ color: "#E2F0F7", paddingRight: "40px" }}>
+				Profile
+			</Link>
+			<Routes>
+				<Route path="/profiles" Component={Main} />
+			</Routes>
+		</>
+	);
+}
+
+export default App;
+
+{
+	/* <div className="App" style={{ backgroundColor: "#453823" }}>
 			<div
 				style={{
 					display: "flex",
@@ -34,7 +51,7 @@ function App() {
 				}}
 			>
 				<img
-					style={{ width: "100%", height: "700px" }}
+					style={{ marginLeft: "200px", width: "100%", height: "700px" }}
 					src={frontdesk}
 					alt="frontdesk"
 				></img>
@@ -42,7 +59,7 @@ function App() {
 					style={{
 						position: "absolute",
 						top: "50%",
-						left: "50%",
+						left: "60%",
 						transform: "translate(-50%, -50%)",
 						display: "flex",
 						alignItems: "center",
@@ -87,11 +104,12 @@ function App() {
 				<div
 					style={{
 						position: "absolute",
-						top: "80%",
-						left: "50%",
+						top: "90%",
+						left: "60%",
 						transform: "translate(-50%, -50%)",
 						backgroundColor: "rgba(0, 0, 0, 0.8)",
 						color: "lightblue",
+						padding: "3px 5px",
 					}}
 				>
 					Click here to learn more about our services...
@@ -101,11 +119,9 @@ function App() {
 				style={{
 					backgroundColor: "rgb(249,248,217)",
 					display: "grid",
-					fontSize: "22px",
 					alignItems: "center",
-
-					margin: "10px 10px",
 					padding: "30px",
+					fontSize: "18px",
 					gridTemplateColumns: "1fr 1fr 1fr 1fr",
 					gridTemplateRows: "auto",
 					gridTemplateAreas:
@@ -122,8 +138,8 @@ function App() {
 					Get In Touch!
 				</h3>
 				<div style={{ gridArea: "address" }}>
-					<h4>Ad​d​ress & Parking Deatils</h4>
-					<p>Capelli Curl® by My Capelli Salon</p>
+					<h4>Capelli Curl® by My Capelli Salon</h4>
+					<p>Ad​d​ress & Parking Deatils </p>
 					<h4>
 						<a href="https://www.google.com/maps/place/79+Mamaroneck+Ave,+White+Plains,+NY+10601/@41.0304615,-73.7680001,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29430b4cd3573:0xb2677b5733add367!8m2!3d41.0304575!4d-73.7654252!16s%2Fg%2F11bw4lwz4m?entry=ttu">
 							79 Mamaroneck Ave., White Plains, NY 10601
@@ -200,8 +216,5 @@ function App() {
 					</div>
 				</div>
 			</div>
-		</div>
-	);
+		</div> */
 }
-
-export default App;
