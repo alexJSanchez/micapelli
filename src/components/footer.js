@@ -7,24 +7,24 @@ import twitter from "../twitter_icon.png";
 function Footer() {
 	return (
 		<div
+			className="footer"
 			style={{
 				backgroundColor: "rgb(249,248,217)",
 				alignItems: "center",
 				padding: "30px",
-				fontSize: "18px",
 				width: "100%",
 			}}
 		>
 			<h3
+				className="getintouch"
 				style={{
-					fontSize: "30px",
 					gridArea: "title",
 					marginBottom: "25px",
 				}}
 			>
 				Get In Touch!
 			</h3>
-			<div>
+			<div className="footer-address-container">
 				<h4>Capelli Curl® by My Capelli Salon</h4>
 				<p>Ad​d​ress & Parking Deatils </p>
 				<h4>
@@ -45,7 +45,6 @@ function Footer() {
 				<p>Email</p>
 				<h5>capellicurl@mycapellisalon.com</h5>
 				<p>
-					To book online,
 					<a href="https://www.vagaro.com/mycapellisaloninc/services/">
 						Click Here: Book Now!!
 					</a>
@@ -60,7 +59,7 @@ function Footer() {
 				}}
 			>
 				<h5>Hours</h5>
-				<div style={{}}>
+				<div>
 					<div>
 						<p>Tuesday</p>
 						<h5>9:30am - 5:45pm</h5>
@@ -84,10 +83,12 @@ function Footer() {
 			<div>
 				<h4>Social</h4>
 				<div
+					className="footer-icons-container"
 					style={{
 						display: "flex",
 						alignItems: "center",
 						gap: "20px",
+						flexWrap: "wrap",
 					}}
 				>
 					<img src={pinterest} alt="pinterest icon"></img>
