@@ -1,7 +1,9 @@
 import "./App.css";
-import Nav from "./components/Nav";
+
 import Main from "./components/Main";
-import { Link, Route, Routes } from "react-router-dom";
+import Nav from "./components/nav";
+import Gallery from "./components/gallery";
+import { Route, Routes } from "react-router-dom";
 
 // import frontdesk from "./frontdesk.webp";
 // import pinterest from "./pinterest_icon.png";
@@ -13,11 +15,10 @@ import { Link, Route, Routes } from "react-router-dom";
 function App() {
 	return (
 		<>
-			<Link to="/profiles" style={{ color: "#E2F0F7", paddingRight: "40px" }}>
-				Profile
-			</Link>
+			<Nav />
 			<Routes>
-				<Route path="/profiles" Component={Main} />
+				<Route path="/" Component={Main}></Route>
+				<Route path="/gallery" Component={Gallery} />
 			</Routes>
 		</>
 	);
