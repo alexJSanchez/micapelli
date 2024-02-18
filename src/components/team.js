@@ -1,7 +1,9 @@
 import React from "react";
+import Services from "./services";
 import pedro from "../pedro_working.jpg";
 import angie from "../angie_working.jpg";
 import lucas from "../lucas_image.png";
+import judy from "../judy.png";
 function Team() {
 	return (
 		<div className="team">
@@ -32,7 +34,7 @@ function Team() {
 						<h2>Angie</h2>
 					</div>
 					<div>
-						<img className="employee-card-image" src={lucas}></img>
+						<img className="employee-card-image" src={judy}></img>
 						<p>Stylists</p>
 						<h2>Judy</h2>
 					</div>
@@ -54,27 +56,7 @@ function Team() {
 					dreaming of wearing and help you embrace your natural hair texture.
 				</p>
 			</div>
-			<div className="services-caontainer">
-				<h2 style={{ color: "#ca8134" }}>Our Services</h2>
-			</div>
-			<div className="services">
-				<div style={{ border: "solid 2px", padding: "0px 20px" }}>
-					<h4>Dry cut - Deva technique</h4>
-					<p>
-						The haircut is performed on dry hair in its natural state using the
-						Deva cut technique.
-					</p>
-					<h4>Wet cut - Traditional technique</h4>
-					<p>
-						The haircut is performed on wet hair using a comb (after shampoo).{" "}
-					</p>
-					<h4>This service is temporarily unavailable until further notice.</h4>
-					<h3>Gift certificates available</h3>
-				</div>
-				<div style={{ border: "solid 2px" }}>
-					<h4 className="">Dry cut - Deva technique</h4>
-				</div>
-			</div>
+			<Services />
 		</div>
 	);
 }
