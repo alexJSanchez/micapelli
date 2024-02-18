@@ -4,6 +4,7 @@ import pedro from "../pedro_working.jpg";
 import angie from "../angie_working.jpg";
 import lucas from "../lucas_image.png";
 import judy from "../judy.png";
+import emily from "../emily_image.jpg";
 function Team() {
 	return (
 		<div className="team">
@@ -39,7 +40,7 @@ function Team() {
 						<h2>Judy</h2>
 					</div>
 					<div>
-						<img className="employee-card-image" src={lucas}></img>
+						<img className="employee-card-image" src={emily}></img>
 						<p>Stylists</p>
 						<h2>Emily</h2>
 					</div>
