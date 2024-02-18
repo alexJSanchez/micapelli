@@ -1,4 +1,5 @@
 import React from "react";
+import Team from "./team";
 import "../App.css";
 import frontdesk from "../frontdesk_mobile.png";
 function Main() {
@@ -67,6 +68,7 @@ function Main() {
 					</div>
 				</div>
 			</div>
+			<Team />
 		</div>
 	);
 }
