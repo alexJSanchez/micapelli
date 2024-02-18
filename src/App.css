@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: cursive;
+	/* font-family: cursive; */
 }
 .App {
 	text-align: center;
@@ -57,13 +57,27 @@
 .team {
 	background-color: #2a1b0b;
 	text-align: center;
-	color: lightblue;
-	padding: 5px;
+	color: #fbfbdb;
+	h2 {
+		font-size: 40px;
+	}
 }
-.team-heading-container {
+.team-text-container {
 	display: flex;
+	flex-direction: column;
 	h2 {
 		text-wrap: nowrap;
+	}
+}
+.employee-card-image {
+	border-radius: 50%;
+
+	width: 150px;
+	height: 150px;
+}
+@media only screen and (min-width: 768px) {
+	.team-text-container {
+		flex-direction: row;
 	}
 }
 @media only screen and (min-width: 1440px) {
@@ -78,6 +92,12 @@
 	}
 	.footer-address-container {
 		width: 400px;
+	}
+	.header-text {
+		font-size: 32px;
+	}
+	.team-text-container {
+		font-size: 20px;
 	}
 }
 

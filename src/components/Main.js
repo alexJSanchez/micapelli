@@ -41,8 +41,9 @@ function Main() {
 						}}
 					>
 						<div
+							className="header-text"
 							style={{
-								color: "lightblue",
+								color: "#fbfbdb",
 								// Change the last value (0.5) for opacity
 								padding: "10px",
 							}}
@@ -60,10 +61,15 @@ function Main() {
 								borderRadius: "35px",
 								padding: "15px",
 								textWrap: "nowrap",
-								color: "lightblue",
+								color: "#ca8134",
 							}}
 						>
-							Book Now
+							<a
+								style={{ color: "#ca8134" }}
+								href="https://www.vagaro.com/mycapellisaloninc"
+							>
+								Book Now
+							</a>
 						</h1>
 					</div>
 				</div>
