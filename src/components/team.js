@@ -45,17 +45,6 @@ function Team() {
 					</div>
 				</div>
 			</div>
-			<div className="team-text-container">
-				<p>
-					dry cut, natural curly hair set & Pintura highlights, lowlights,
-					single process color, updos and more for all kinds of wavy, curly and
-					super curly hair textures.
-				</p>
-				<p>
-					Our stylists will help you to achieve the desired style you've been
-					dreaming of wearing and help you embrace your natural hair texture.
-				</p>
-			</div>
 			<Services />
 		</div>
 	);

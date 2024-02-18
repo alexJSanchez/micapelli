@@ -30,7 +30,7 @@ function Services() {
 				</h4>
 
 				<p>Consultations are complimentary</p>
-				<div className="dotted-border"></div>
+
 				<p>Desired haircut</p>
 
 				<p>Wash using DevaCurl or Innersense products</p>
