@@ -91,11 +91,21 @@ function Footer() {
 						flexWrap: "wrap",
 					}}
 				>
-					<img src={pinterest} alt="pinterest icon"></img>
-					<img src={facebook} alt="facebook icon"></img>
-					<img src={instagram} alt="instagram icon"></img>
-					<img src={linkedin} alt="linkedin icon"></img>
-					<img src={twitter} alt="twitter icon"></img>
+					<a href="https://www.pinterest.com/mycapellisalon/">
+						<img src={pinterest} alt="pinterest icon"></img>
+					</a>
+					<a href="https://www.facebook.com/mycapellisalonbypedro">
+						<img src={facebook} alt="facebook icon"></img>
+					</a>
+					<a href="https://www.instagram.com/capellicurlbymycapellisalon/">
+						<img src={instagram} alt="instagram icon"></img>
+					</a>
+					<a href="https://www.linkedin.com/in/pedro-panduro-01b73897/">
+						<img src={linkedin} alt="linkedin icon"></img>
+					</a>
+					<a href="https://twitter.com/ppv21ny">
+						<img src={twitter} alt="twitter icon"></img>
+					</a>
 				</div>
 			</div>
 		</div>

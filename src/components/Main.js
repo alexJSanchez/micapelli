@@ -48,10 +48,8 @@ function Main() {
 						>
 							<h2>Capelli Curl® by My Capelli Salon</h2>
 							<p>
-								A unique salon located in White Plains, NY specializing in Deva
-								technique: dry cut, natural curly hair set & Pintura highlights,
-								lowlights, single process color, updos and more for all kinds of
-								wavy, curly and super curly hair textures.
+								A unique salon located in White Plains, NY specializing in
+								DevaCurl technique
 							</p>
 						</div>
 						<h1
