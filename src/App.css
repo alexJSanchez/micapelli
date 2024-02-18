@@ -57,7 +57,7 @@
 .team {
 	background-color: #2a1b0b;
 	text-align: center;
-	color: #fbfbdb;
+	color: #a9a9ae;
 	h2 {
 		font-size: 40px;
 	}
@@ -65,10 +65,13 @@
 .team-text-container {
 	display: flex;
 	flex-direction: column;
+	padding: 10px;
+	color: #fbfbdb;
 	h2 {
 		text-wrap: nowrap;
 	}
 }
+
 .employee-card-image {
 	border-radius: 50%;
 

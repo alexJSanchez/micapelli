@@ -34,7 +34,7 @@ function Team() {
 					<div>
 						<img className="employee-card-image" src={lucas}></img>
 						<p>Stylists</p>
-						<h2>judy</h2>
+						<h2>Judy</h2>
 					</div>
 					<div>
 						<img className="employee-card-image" src={lucas}></img>
@@ -45,18 +45,36 @@ function Team() {
 			</div>
 			<div className="team-text-container">
 				<p>
-					<h3>Our Services</h3>
 					dry cut, natural curly hair set & Pintura highlights, lowlights,
 					single process color, updos and more for all kinds of wavy, curly and
 					super curly hair textures.
 				</p>
 				<p>
-					<h3>Our promise</h3>
 					Our stylists will help you to achieve the desired style you've been
 					dreaming of wearing and help you embrace your natural hair texture.
 				</p>
 			</div>
-			<div></div>
+			<div className="services-caontainer">
+				<h2 style={{ color: "#ca8134" }}>Our Services</h2>
+			</div>
+			<div className="services">
+				<div style={{ border: "solid 2px", padding: "0px 20px" }}>
+					<h4>Dry cut - Deva technique</h4>
+					<p>
+						The haircut is performed on dry hair in its natural state using the
+						Deva cut technique.
+					</p>
+					<h4>Wet cut - Traditional technique</h4>
+					<p>
+						The haircut is performed on wet hair using a comb (after shampoo).{" "}
+					</p>
+					<h4>This service is temporarily unavailable until further notice.</h4>
+					<h3>Gift certificates available</h3>
+				</div>
+				<div style={{ border: "solid 2px" }}>
+					<h4 className="">Dry cut - Deva technique</h4>
+				</div>
+			</div>
 		</div>
 	);
 }
