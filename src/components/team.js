@@ -16,12 +16,12 @@ function Team() {
 					<h2>Pedro</h2>
 				</div>
 				<div
+					className="employee-team-card"
 					style={{
 						display: "flex",
 						justifyContent: "center",
 						flexWrap: "wrap",
 						margin: "10px 10px",
-						gap: "10px",
 					}}
 				>
 					<div>

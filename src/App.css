@@ -92,6 +92,9 @@
 		color: #fbfbdb;
 	}
 }
+.employee-team-card {
+	gap: 10px;
+}
 
 @media only screen and (min-width: 768px) {
 	.header-text {
@@ -104,6 +107,9 @@
 	}
 	.team-text-container {
 		flex-direction: row;
+	}
+	.employee-team-card {
+		gap: 50px;
 	}
 }
 @media only screen and (min-width: 1440px) {
