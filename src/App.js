@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 import Footer from "./components/footer";
 import Main from "./components/Main";
@@ -22,7 +21,6 @@ function App() {
 				<Route path="/gallery" Component={Gallery} />
 			</Routes>
 			<Footer />
-			<Analytics />
 		</>
 	);
 }
